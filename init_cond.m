@@ -9,5 +9,5 @@ ed0 = zeros(params.n, 1);
 
 for ie = 1:params.ne+1
    e0(6*ie-5) = (ie-1) * params.L;
-   e0(6*ie-2) = 1;
+   e0(6*ie-2) = 1; %RBS: PENSO SER A ORIENTAÇÃO (dX1/dX)
 end

@@ -18,7 +18,7 @@ for ie = 1:params.ne
     
     % Calculate axial force
     Qe = zeros(12,1);
-    for k = 1:5
+    for k = 1:5 % RBS: 5 PONTOS DE INT. P/ FORÇAS LONGITUDINAIS
         x = (1 + x5(k)) * params.L / 2;
         eee = eps_integrand(e(istart:iend), x, params.L);
         Qe = Qe + w5(k) * eee;

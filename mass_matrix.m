@@ -6,8 +6,8 @@ Me = mass(params.L);
 Me = params.rho * params.A * params.L * Me;
 
 % Assemble mass matrix for a noodle with 'ne' elements.
-M00 = Me(1:6,1:6);
-M01 = Me(1:6,7:12);
+M00 = Me(1:6,1:6); % RBS: linhas 9 a 21 podem ser substituídas pelo meu
+M01 = Me(1:6,7:12); % código utilizando M(dof,dof), por exemplo.
 M10 = Me(7:12,1:6);
 M11 = Me(7:12, 7:12);
 

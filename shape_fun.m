@@ -11,6 +11,7 @@ function S = shape_fun(x, L, der)
 xi = x / L;
 
 switch der
+    %RBS: Si = {r,dr1dX,dr2dX dr3dX}
     case 0
         S = [1 - 3*xi^2 + 2*xi^3
             L * (xi - 2*xi^2 + xi^3)
