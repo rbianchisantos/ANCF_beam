@@ -45,8 +45,8 @@ end
 tol = 1e-6;
 maxIt = 100;
 
-beta = 0.3025;
-gam = 0.6;
+beta = 0.25;
+gam = 0.5;
 
 inv_beta = 1 / (beta * h^2);
 
